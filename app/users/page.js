@@ -13,7 +13,7 @@ export default function UsersPage() {
     useEffect(() => {
         const fetchUsers = async () => {
             setLoading(true);
-            const response = await fetch('/api/users');
+            const response = await fetch('https://next-crud-alpha-one.vercel.app/api/users');
             const data = await response.json();
             setUsers(data);
             setLoading(false);
